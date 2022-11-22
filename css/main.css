@@ -1,0 +1,100 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Michroma&family=Yrsa:wght@300;400;500&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box}
+.container{width: 600px;height: 600px;background: url("../img/bg_03.jpg");margin: 0 auto;background-size: 1400px;background-repeat: no-repeat;background-position: right;position: relative;box-sizing: border-box}
+.character{background: url("../img/dreamy_vocal_hatsune_miku_v4x_by_thegoogoo777_de81b5n.png");background-size: 600px;height:270px;width: 400px;background-repeat: no-repeat;background-position: top;margin: 120px 0 0 90px;position: absolute;z-index: 2000}
+.pattern{background: url("../img/Pattern1.png");background-size: 300px;height:40px;z-index: 3000;width:60px;background-repeat: no-repeat;background-position: center;position: absolute;margin:352px 0 0 110px}
+.pattern1{background: url("../img/Pattern1.png");background-size: 300px;height:40px;z-index: 3000;width:60px;background-repeat: no-repeat;background-position: center;position: absolute;margin:152px 0 0 439px}
+.trangtri{height:70px;width:25px;box-sizing:border-box;margin-left: 70px;position: absolute;background: #12373b}
+.trangtri1{height:70px;width:25px;box-sizing:border-box;position: absolute;background: #12373b;margin:530px 510px}
+.textchinh{font-family: 'Michroma', sans-serif;font-size: 70px;color: #55a1af;text-align: center;padding-top: 100px;line-height: 1px;box-sizing: border-box;
+ text-shadow: 1px 1px 2px black;position: relative;
+}
+.comingsoon{font-family: 'Caveat', cursive;
+	font-size: 75px;color: white;text-align: center;padding: 240px 130px;line-height: 1px;z-index:3000;position:absolute;text-shadow: 0px 0px 10px white;
+-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;}
+.textbox p{font-family: 'Yrsa', serif;
+	
+	color: white;
+	font-size: 9px;
+font-weight: 400;
+	text-shadow: 0px 0px 3px black
+}
+.textbox{
+	padding: 7px;
+margin: 70px 20px;
+	background: rgba( 85, 161, 175, 1 );
+box-shadow: 0 0px 20px 0 #070707;
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+	width: 130px;
+}
+.textbox1 p{font-family: 'Michroma', sans-serif;
+
+	
+	color: white;
+	font-size: 12px;
+font-weight: 400;
+	padding-top: 68px;text-align: center
+}
+.textbox2{font-family: 'Michroma', sans-serif;
+
+		text-shadow: 0px 0px 3px black
+;
+	color: white;
+	font-size: 12px;
+font-weight: 500;
+text-align: center;
+	line-height: 26px;background: #55a1af;margin: 10px 200px; height:26px
+}
+.textbox3 p{font-family: 'Michroma', sans-serif;
+
+	
+	color: #55a1af;
+	font-size: 11px;
+font-weight: 100;
+	text-align: center
+}
+.textbox4 p{font-family: 'Michroma', sans-serif;
+
+	
+	color: #55a1af;
+	font-size: 8px;
+font-weight: 100;
+	writing-mode:vertical-rl;
+	margin: -300px 540px
+}
+#replay:active + .container .textbox3 p,
+#replay:active + .container .textbox4 p,
+#replay:active + .container .textchinh,
+#replay:active + .container .comingsoon,
+#replay:active + .container .textbox,
+#replay:active + .container .textbox1 p,
+#replay:active + .container .textbox2 
+{animation-name: none}
+
+/*anim*/
+.pattern1{animation:pulse 3s 0s linear infinite}
+.pattern{animation:pulse 3s 0s linear infinite}
+.textbox3 p{animation: fadeInLeft 3s 2s ease backwards}
+.textbox4 p{animation: fadeInDown 3s 2s ease backwards}
+.textbox{animation: fadeInLeft 3s 0s ease forwards}
+.comingsoon{animation: bounceIn 3s 3s ease backwards}
+.textbox1 p{animation: bounceInDown 3s 0s ease forwards}
+.textbox2{animation: flipInY 3s 2s ease forwards}
+.textchinh{animation-name: animtext;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+	animation-direction: alternate;}
+@keyframes animtext {
+  0%   {color:#55a1af; left:0px; top:0px;}
+  100%  {color:grey; left:0px; top:200px;}
+}
+
+#replay{font-family: 'Michroma', sans-serif;color:white;text-align:center;margin:530px 872px;z-index:4000;position:absolute;font-size:14px;text-shadow: 0px 0px 6px white;animation:pulse 2s 0s ease infinite}
